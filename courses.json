@@ -1,0 +1,47 @@
+[
+  {
+    "imageSrc": "img/course-n1.webp",
+    "title": "iOS Development",
+    "registrationDate": "რეგისტრაცია დასრულებულია"
+  },
+  {
+    "imageSrc": "img/react.webp",
+    "title": "React",
+    "registrationDate": "რეგისტრაცია დასრულებულია"
+  },
+  {
+    "imageSrc": "img/python.webp",
+    "title": "Intro to Python",
+    "registrationDate": "რეგისტრაცია დასრულებულია"
+  },
+  {
+    "imageSrc": "img/python-advanced.webp",
+    "title": "Advanced Python",
+    "registrationDate": "რეგისტრაცია დასრულებულია"
+  },
+  {
+    "imageSrc": "img/cybersecurity.webp",
+    "title": "Advanced Cybersecurity Course",
+    "registrationDate": "რეგისტრაცია დასრულებულია"
+  },
+  {
+    "imageSrc": "img/training.webp",
+    "title": "ToT - Training of Trainers",
+    "registrationDate": "რეგისტრაცია დასრულებულია"
+  },
+  {
+    "imageSrc": "img/blockchain.webp",
+    "title": "Blockchain",
+    "registrationDate": "რეგისტრაცია დასრულებულია"
+  },
+  {
+    "imageSrc": "img/devops.webp",
+    "title": "DevOps",
+    "registrationDate": "რეგისტრაცია დასრულებულია"
+  },
+  {
+    "imageSrc": "img/security.webp",
+    "title": "Information Security Governance",
+    "registrationDate": "რეგისტრაცია დასრულებულია"
+  }
+]

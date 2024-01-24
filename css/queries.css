@@ -1,0 +1,267 @@
+/***********************/
+/* BELOW 1344px (Smaller desktops) */
+/***********************/
+
+@media (max-width: 84em) {
+  .header {
+    justify-content: space-between;
+  }
+
+  .hero-primary-heading {
+    font-size: 4rem;
+  }
+
+  .section-courses {
+    padding: 4.8rem 9.6rem 9.6rem;
+  }
+}
+
+/***********************/
+/* BELOW 1200px (Landscape Tablets) */
+/***********************/
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .section-faq {
+    padding: 4.8rem 6.4rem 6.4rem;
+  }
+
+  .title {
+    line-height: 1.8;
+  }
+
+  .section-partners {
+    padding: 4.8rem;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+
+  .hero {
+    gap: 4.8rem;
+  }
+}
+
+/***********************/
+/* BELOW 944px (Tablets) */
+/***********************/
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .header {
+    justify-content: space-between;
+  }
+
+  .main-container {
+    max-width: 100rem;
+  }
+
+  .grid-9--col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .textbox {
+    left: 10%;
+  }
+
+  .content-box p {
+    font-size: 1.8rem;
+  }
+
+  /* MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .main-nav {
+    background-color: rgb(34, 34, 34);
+    --webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* Hide Navigation */
+    /* Allows NO transition at all */
+    /* display: none; */
+
+    /* 1) Hide it vissualy */
+    opacity: 0;
+
+    /* 2)Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3)Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0%);
+    z-index: 9999;
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+}
+
+/***********************/
+/* BELOW 704px (Smalller Tablets) */
+/***********************/
+
+@media (max-width: 44em) {
+  .questions {
+    flex-direction: column-reverse;
+    gap: 3.2rem;
+  }
+
+  .hero-secondary-heading {
+    line-height: 1.6;
+  }
+
+  .textbox {
+    top: 30%;
+  }
+
+  .grid-9--col {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .section-courses {
+    padding: 4.8rem;
+  }
+
+  .main-container {
+    padding: 2.4rem;
+  }
+  .course-link:link,
+  .course-link:visited {
+    margin-top: 3.2rem;
+    font-size: 2rem;
+  }
+
+  .course-main-heading {
+    font-size: 3.2rem;
+  }
+
+  .about-link:link,
+  .about-link:visited {
+    font-size: 2.4rem;
+  }
+
+  .about-heading {
+    font-size: 2.4rem;
+  }
+}
+
+/***********************/
+/* BELOW 544px (Phones) */
+/***********************/
+
+@media (max-width: 34em) {
+  .text-box {
+    top: 20%;
+  }
+
+  .section-partners {
+    padding: 3.2rem;
+  }
+
+  .section-faq {
+    padding: 4.8rem 6.4rem 3.2rem;
+  }
+
+  .footer {
+    padding: 3.2rem;
+  }
+}
+
+/***********************/
+/* Fixing Safari flexbox gap */
+/***********************/
+
+.no-flexbox-gap .main-nav-list li:not(:last-child) {
+  margin-right: 4.8rem;
+}
+
+.no-flexbox-gap .list-item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.no-flexbox-gap .list-icon:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .delivered-faces {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .meal-attribute:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.no-flexbox-gap .meal-icon {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .footer-row div:not(:last-child) {
+  margin-right: 6.4rem;
+}
+
+.no-flexbox-gap .social-links li:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.no-flexbox-gap .footer-nav li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+@media (max-width: 75em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 3.2rem;
+  }
+}
+
+@media (max-width: 59em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 4.8rem;
+  }
+}

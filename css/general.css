@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  overflow-x: hidden;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(244, 244, 244);
+  font-weight: 500;
+  font-size: 1.6rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: rgb(0, 163, 224);
+}
+
+.about-link:link,
+.about-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #00aef3;
+  font-weight: bold;
+  font-size: 2rem;
+  transition: all 0.3s;
+}
+
+.about-link:hover,
+.about-link:active {
+  color: grey;
+}
+
+.course-link:link,
+.course-link:visited {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  font-size: 1.6rem;
+  color: #00aeef;
+  text-decoration: none;
+  margin-top: 9.6rem;
+  transition: all 0.3s;
+}
+
+.course-link:hover,
+.course-link:active {
+  color: #007aa7;
+}
+
+.rules:link,
+.rules:visited {
+  color: #fff;
+  font-size: 1.4rem;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.rules:hover,
+.rules:active {
+  color: rgb(170, 170, 170);
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
+}
+
+.footer-btn:link,
+.footer-btn:visited {
+  display: inline-block;
+  background-color: #00aef3;
+  color: #ffffff;
+  font-weight: 100;
+  letter-spacing: 1px;
+  font-size: 1.6rem;
+  text-decoration: none;
+  border-radius: 0.7rem;
+  padding: 1.2rem 3.2rem;
+  transition: all 0.3s;
+}
+
+.footer-btn:hover,
+.footer-btn:active {
+  background-color: rgb(213, 213, 213);
+  color: #000;
+}
+
+/***********************/
+/* GENERAL REUSABLE COMPONENTS*/
+/***********************/
+
+.main-container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}

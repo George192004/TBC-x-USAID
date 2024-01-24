@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Font from Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS styles-->
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <!-- TBC icon for different devices-->
+    <link
+      rel="icon"
+      sizes="192x192"
+      href="https://static.wixstatic.com/media/93e8a3_03d83d668a5f417ca646a5e511f8c02a%7Emv2.png/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/93e8a3_03d83d668a5f417ca646a5e511f8c02a%7Emv2.png"
+      type="image/png"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://static.wixstatic.com/media/93e8a3_03d83d668a5f417ca646a5e511f8c02a%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/93e8a3_03d83d668a5f417ca646a5e511f8c02a%7Emv2.png"
+      type="image/png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://static.wixstatic.com/media/93e8a3_03d83d668a5f417ca646a5e511f8c02a%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/93e8a3_03d83d668a5f417ca646a5e511f8c02a%7Emv2.png"
+      type="image/png"
+    />
+
+    <!-- JS file-->
+    <script defer src="js/script.js"></script>
+
+    <title>TBC x USAID</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#">
+        <img class="logo" alt="TBCxUSAID logo" src="icon.svg" />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#">მთავარი</a></li>
+          <li><a class="main-nav-link" href="#it-academy">TBC IT</a></li>
+          <li>
+            <a class="main-nav-link" href="#usaid">TBC x USAID</a>
+          </li>
+          <li><a class="main-nav-link" href="#risks-academy">რისკები</a></li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <main>
+      <section class="section-hero">
+        <div class="main-container">
+          <div class="textbox">
+            <h1 class="hero-primary-heading">TBC x USAID</h1>
+            <h2 class="hero-secondary-heading">ტექნოლოგიური განათლებისთვის</h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-about">
+        <div class="container main-container">
+          <div class="about-text">
+            <h1 class="about-heading">
+              „ TBC x USAID - ტექნოლოგიური განათლებისთვის “ პროგრამა
+              საინფორმაციო ტექნოლოგიებით დაინტერესებულ ადამიანებს გთავაზობთ
+              სრულად დაფინანსებულ ონლაინ საგანმანათლებლო პრაქტიკულ კურსებს
+              სხვადასხვა ICT მიმართულებით. წარმატებულ კურსდამთავრებულებს ეძლევათ
+              შესაძლებლობა დასაქმდნენ თიბისისა და მის პარტნიორ კომპანიებში.
+            </h1>
+          </div>
+          <a class="about-link" href="#">გაიგე მეტი</a>
+        </div>
+      </section>
+
+      <section class="section-courses">
+        <div class="main-container">
+          <div class="course-content">
+            <h2 class="course-main-heading">სასწავლო კურსები</h2>
+          </div>
+          <div class="grid-9--col">
+            <!-- კურსები გენერირდება courses.json ფაილიდან -->
+          </div>
+        </div>
+      </section>
+
+      <section class="section-partners">
+        <div class="main-container">
+          <h2 class="partner-heading">პროექტის პარტნიორები</h2>
+        </div>
+        <!-- Swiper -->
+        <div #swiperRef="" class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/slider-1.webp" alt="usaid" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/slider-2.webp" alt="space" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/slider-3.webp" alt="tnet" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/slider-4.webp" alt="tegeta" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/slider-5.webp" alt="spactre" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/slider-6.webp" alt="tbc-leasing" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/slider-7.webp" alt="ufc" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <section class="section-faq">
+        <div class="main-container">
+          <div class="questions">
+            <h2 class="partner-heading">ხშირად დასმული კითხვები</h2>
+            <a class="about-link" href="#">ყველა კითხვა</a>
+          </div>
+
+          <div class="accordion" id="faq-container">
+            <!-- FAQ გენერირდება JS-დან დინამიურად -->
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="main-container footer-container">
+          <div class="tbc-logo">
+            <img src="img/tbc-logo.webp" alt="tbc-logo" />
+            <p>&copy; 2023 ყველა უფლება დაცულია</p>
+            <a class="rules" href="#">წესები და პირობები</a>
+          </div>
+          <div class="socials-col">
+            <ul class="social-links">
+              <li>
+                <a class="footer-link">
+                  <img
+                    class="social-icon"
+                    src="img/facebook-logo.webp"
+                    alt="facebook-logo"
+                  />
+                </a>
+              </li>
+              <li>
+                <a class="footer-link">
+                  <img
+                    class="social-icon"
+                    src="img/youtube-logo.png"
+                    alt="youtube-logo"
+                /></a>
+              </li>
+            </ul>
+            <div class="get-in-touch">
+              <a class="footer-btn" href="#">მოგვწერეთ</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- ION icons-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
